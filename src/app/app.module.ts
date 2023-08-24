@@ -2,20 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BioComponent } from './bio/bio.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectComponent } from './project/project.component';
+import { PersonalInfoModule } from './personal-info/personal-info.module';
+import { PersonalInfoComponent } from './personal-info/personal-info.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    BioComponent,
+    AppComponent,    
     HeaderComponent,
-    ProjectComponent
+    ProjectComponent,
+    PersonalInfoComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PersonalInfoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
