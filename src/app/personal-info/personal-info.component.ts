@@ -8,5 +8,10 @@ import { Router } from '@angular/router';
 })
 export class PersonalInfoComponent {
   
-  
+  infoDisplay = 'block'; // Initially set to 'block' for display
+
+    changeDisplay() {
+        this.infoDisplay = 'none';
+    }
+
 }

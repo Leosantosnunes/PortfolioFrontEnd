@@ -1,0 +1,9 @@
+.myself {
+    display: none;
+ }
+ 
+ @media (min-width: 576px) {
+    .myself {
+        display: block;
+    }
+ }

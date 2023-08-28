@@ -1,0 +1,19 @@
+.fullScreen {
+   display: none;
+}
+
+@media (min-width: 1000px) {
+   .fullScreen {
+       display: block;
+   }
+}
+
+.mobile {
+   display: block;
+}
+
+@media (min-width: 1000px) {
+   .mobile {
+       display: none;
+   }
+}

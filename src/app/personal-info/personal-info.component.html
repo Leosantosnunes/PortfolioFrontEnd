@@ -4,17 +4,20 @@
             <nav class="navbar">
                 <div class="container-fluid justify-content-center">                    
                     <div><button routerLink='/education'
-                        routerLinkActive='active' class="btn btn-warning m-1">Education</button></div>
+                        routerLinkActive='active' class="btn btn-warning m-1" (click)="changeDisplay()">Education</button></div>
                     <div><button routerLink='/workexperience'
-                        routerLinkActive='active' class="btn btn-warning m-1">Work Experience</button></div>
-                    <div><button class="btn btn-warning m-1">Skills</button></div>
+                        routerLinkActive='active' class="btn btn-warning m-1" (click)="changeDisplay()">Work Experience</button></div>
+                    <div><button class="btn btn-warning m-1" routerLink='/skills'
+                        routerLinkActive='active' (click)="changeDisplay()">Skills</button></div>
                     <div><button routerLink='/hobbies'
-                        routerLinkActive='active' class="btn btn-warning m-1">Hobbies</button></div>
+                        routerLinkActive='active' class="btn btn-warning m-1" (click)="changeDisplay()">Hobbies</button></div>
                 </div>
             </nav>            
             <div class="d-flex justify-content-center align-items-center" style="min-height: 350px;">
-                <h5>Select the button to get the info</h5>
-                <router-outlet></router-outlet>
+                <h5 [style.display]= 'infoDisplay' >Select the button to get the info</h5>
+                <div [ngClass]="{'w-100': infoDisplay === 'none'}">
+                    <router-outlet></router-outlet>
+                </div>
             </div>
         </div>
         <div class="m-2">

@@ -5,6 +5,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 import { EducationComponent } from './education/education.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { RouterModule } from '@angular/router';
+import { SkillsComponent } from './skills/skills.component';
 
 
 
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     HobbiesComponent,
     EducationComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    SkillsComponent
     
   ],
   imports: [
