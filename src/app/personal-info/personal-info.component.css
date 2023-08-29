@@ -2,7 +2,7 @@
     display: none;
  }
  
- @media (min-width: 576px) {
+ @media (min-width: 1000px) {
     .myself {
         display: block;
     }

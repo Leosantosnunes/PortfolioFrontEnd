@@ -4,12 +4,12 @@
 
 @media (min-width: 1000px) {
    .fullScreen {
-       display: block;
+       display: table;
    }
 }
 
 .mobile {
-   display: block;
+   display: table;
 }
 
 @media (min-width: 1000px) {

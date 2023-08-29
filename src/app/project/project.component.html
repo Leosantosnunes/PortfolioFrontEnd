@@ -1,26 +1,74 @@
 <i class="text-white fs-1 p-3">Projects</i>
-<div>
-    <div class="d-flex align-items-center flex-row-reverse" style="background-color: rgba(255, 255, 255, 0.501);">
-        <div class="p-4 m-4 rounded-4 w-75" style="font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgba(255, 255, 255, 0.878);">
-            <nav class="navbar">
-                <div class="container-fluid justify-content-center">
-                    <div><button class="btn btn-warning m-1">Bio</button></div>
-                    <div><button routerLink='/education'
-                        routerLinkActive='active' class="btn btn-warning m-1">Education</button></div>
-                    <div><button routerLink='/workexperience'
-                        routerLinkActive='active' class="btn btn-warning m-1">Work Experience</button></div>
-                    <div><button class="btn btn-warning m-1">Skills</button></div>
-                    <div><button routerLink='/hobbies'
-                        routerLinkActive='active' class="btn btn-warning m-1">Hobbies</button></div>
-                </div>
-            </nav>            
-            <div class="d-flex justify-content-center align-items-center" style="min-height: 350px;">
-                <h5>Select the button to get the info</h5>                
+<div id="projects">
+    <div class="d-flex align-items-center justify-content-center" style="background-color: rgba(255, 255, 255, 0.501);">
+        <div id="carouselExampleCaptions" class="carousel slide m-5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </div>
-        <div class="m-2">
-            <img class="mw-100 myself" src="../../assets/images/leo.png" alt="myself">
-        </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="description d-flex">
+                    <img src="../../assets/images/project1.jpg" class="d-block w-100" alt="project1">
+                    <div class="m-5 p-3 rounded-4 d-flex flex-column justify-content-center" style="background-color: rgba(255, 255, 255);">
+                      <h5>Indoor Farm Management</h5>
+                      <p>Description:</p><p>The goal of this project is to monitor and manage indoor plants by measuring soil moisture, temperature, humidity, controlling lighting, and automating routine tasks for optimal plant care. The user-friendly web-based interface facilitates remote monitoring and control of the system.</p>
+                      <h6>Device:</h6>
+                      <ul>
+                        <li>Raspberry Pi 3 A</li>
+                      </ul>
+                      <h6>Programming Languages & Frameworks</h6>
+                      <ul>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="description d-flex">
+                    <img src="../../assets/images/project2.jpg" class="w-100" alt="project2">
+                    <div class="m-5 p-3 rounded-4 d-flex flex-column justify-content-center" style="background-color: rgba(255, 255, 255);">
+                        <h5>Real Estate Template</h5>
+                        <p>Description:</p><p>This project is designed for real estate websites, featuring four pages: Home, Active Listings, Contact, and Sitemap. The template offers a professional and responsive design, showcasing featured properties, displaying property listings, providing a contact form or details, and offering a sitemap for easy navigation. It provides a streamlined solution for real estate businesses to establish their online presence.</p>
+                        <h6>Programming Languages & Frameworks</h6>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="description d-flex">
+                    <img src="../../assets/images/project3.jpg" class="w-100" alt="Project3">
+                    <div class="m-5 p-3 rounded-4 d-flex flex-column justify-content-center" style="background-color: rgba(255, 255, 255);">
+                        <h5>Credit card fraud analysis</h5>
+                        <p>Description:</p><p>This analysis utilizes a dataset of credit card transactions in the western United States. It includes customer details, merchant and purchase category information, and fraud indicators. The goal is to gain insights into credit card transactions and enhance fraud detection strategies.</p>
+                        <h6>Programming Languages & Frameworks</h6>
+                        <ul>
+                          <li>Python</li>
+                          <li>Scikit Learn Library</li>
+                          <li>Pandas Library</li>
+                          <li>Plotly Library</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
 </div>
 

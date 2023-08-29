@@ -6,13 +6,17 @@ import { HeaderComponent } from './header/header.component';
 import { ProjectComponent } from './project/project.component';
 import { PersonalInfoModule } from './personal-info/personal-info.module';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,    
     HeaderComponent,
     ProjectComponent,
-    PersonalInfoComponent
+    PersonalInfoComponent,
+    ContactComponent,
+    FooterComponent
     
   ],
   imports: [

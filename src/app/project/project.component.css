@@ -1,20 +1,10 @@
-.myself {
-    display:none;
+.description {
+   flex-direction: column;
  }
  
- @media (min-width:576px){
-    .myself{
-       display:block;
+ @media (min-width:1200px){
+    .description{
+      flex-direction: row;
     }
  }
 
- button{
-    width:150px;
-    max-width: 100%;
-    height:70px;
-    max-height: 100%;
- }
-
-.education{
-    display: none;
-}
