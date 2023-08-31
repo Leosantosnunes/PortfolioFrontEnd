@@ -10,26 +10,31 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                     <button routerLink='/education'
-                    routerLinkActive='active' class="btn btn-warning m-1" (click)="changeDisplay()">Education</button>
+                    routerLinkActive='active' class="btn m-1 btnstd" (click)="changeDisplay()">Education</button>
                     </li>
                     <li class="nav-item">
                     <button routerLink='/workexperience'
-                    routerLinkActive='active' class="btn btn-warning m-1" (click)="changeDisplay()">Work Experience</button>
+                    routerLinkActive='active' class="btn btnstd m-1" (click)="changeDisplay()">Work Experience</button>
                     </li>
                     <li class="nav-item">
-                    <button class="btn btn-warning m-1" routerLink='/skills'
+                    <button class="btn btnstd m-1" routerLink='/skills'
                     routerLinkActive='active' (click)="changeDisplay()">Skills</button>
                     </li>
                     <li class="nav-item">
                     <button routerLink='/hobbies'
-                    routerLinkActive='active' class="btn btn-warning m-1" (click)="changeDisplay()">Hobbies</button>
+                    routerLinkActive='active' class="btn btnstd m-1" (click)="changeDisplay()">Hobbies</button>
                     </li>
                 </ul>
                 </div>
             </div>
             </nav>            
             <div class="d-flex justify-content-center align-items-center" style="min-height: 350px;">
-                <h5 [style.display]= 'infoDisplay' >Select the button to get the info</h5>
+                <div class="infoName m-3" [style.display]='infoDisplay'>
+                    <h1>I'm Leonardo</h1>
+                    <h1>Nunes</h1>
+                    <h2>Software</h2>
+                    <h2>Developer</h2>
+                </div>
                 <div [ngClass]="{'w-100': infoDisplay === 'none'}">
                     <router-outlet></router-outlet>
                 </div>
