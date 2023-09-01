@@ -2,9 +2,12 @@
    flex-direction: column;
  }
  
- @media (min-width:1200px){
+ @media (min-width:1000px){
     .description{
-      flex-direction: row;
+      flex-direction: row;      
+    }
+    .divimg {
+      width: 100%;
     }
  }
 

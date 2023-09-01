@@ -1,0 +1,19 @@
+.contact {
+    flex-direction: column;
+  }
+  
+  @media (min-width:1200px){
+     .contact{
+       flex-direction: row;
+     }
+  }
+
+  .icons{
+    width:40px;
+    background: transparent;
+    filter: drop-shadow(1px 1px 3px white);
+  }
+
+  .icons:hover{
+    width:50px;
+  }
