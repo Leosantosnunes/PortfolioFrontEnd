@@ -1,0 +1,19 @@
+.lg {
+    display: none;
+ }
+ 
+ @media (min-width: 500px) {
+    .lg {
+        display: table;
+    }
+ }
+
+ .sm {
+    display: table;
+ }
+ 
+ @media (min-width: 500px) {
+    .sm {
+        display: none;
+    }
+ }
