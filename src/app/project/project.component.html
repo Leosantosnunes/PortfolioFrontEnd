@@ -1,4 +1,4 @@
-<i class="text-white fs-1 p-3">Projects</i>
+<!-- <i class="text-white fs-1 p-3">Projects</i>
 <div id="projects">
     <div class="d-flex align-items-center justify-content-center">
         <div id="carouselExampleCaptions" class="carousel carousel-dark slide m-3">
@@ -87,7 +87,82 @@
             </button>
           </div>
     </div>
+</div> -->
+
+
+<i class="text-white fs-1 p-3">Projects</i>
+<div id="projects">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+
+
+        <div class="description d-flex m-3 p-3 rounded-4" style="background-color: rgba(255, 255, 255);" [@scrollTransition]="scrollStateIndoorFarmer">
+            <div class="divimg m-3"><img src="assets/images/project1.jpg" class="img-fluid" alt="project1"></div>
+            <div class="m-2 p-3 rounded-4 d-flex flex-column justify-content-center" style="background-color: rgba(255, 255, 255);">
+              <h5>Indoor Farm Management</h5>
+              <p>Description:</p><p>The goal of this project is to monitor and manage indoor plants by measuring soil moisture, temperature, humidity, controlling lighting, and automating routine tasks for optimal plant care. The user-friendly web-based interface facilitates remote monitoring and control of the system.</p>
+              <h6>Device:</h6>
+              <ul>
+                <li>Raspberry Pi 3 A</li>
+              </ul>
+              <h6>Programming Languages & Frameworks</h6>
+              <ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+        </div>
+
+
+        <div class="description d-flex m-3 p-3 rounded-4" style="background-color: rgba(255, 255, 255);"
+        [@scrollTransition]="scrollStateRealEstate">
+          <div class="divimg m-3"><img src="assets/images/project2.jpg" class="img-fluid" alt="project2"></div>
+            <div class="m-2 p-3 rounded-4 d-flex flex-column justify-content-center" style="background-color: rgba(255, 255, 255);">
+                <h5>Real Estate Template</h5>
+                <p>Description:</p><p>This project is designed for real estate websites, featuring four pages: Home, Active Listings, Contact, and Sitemap. The template offers a professional and responsive design, showcasing featured properties, displaying property listings, providing a contact form or details, and offering a sitemap for easy navigation. It provides a streamlined solution for real estate businesses to establish their online presence.</p>
+                <h6>Programming Languages & Frameworks</h6>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+        </div>
+
+        <div class="description d-flex m-3 p-3 rounded-4"   style="background-color: rgba(255, 255, 255);"
+        [@scrollTransition]="scrollStateCreditCard">
+          <div class="divimg m-3"><img src="assets/images/project3.jpg" class="img-fluid" alt="project3"></div>
+            <div class="m-2 p-3 rounded-4 d-flex flex-column justify-content-center" style="background-color: rgba(255, 255, 255);">
+                <h5>Credit card fraud analysis</h5>
+                <p>Description:</p><p>This analysis project was built to be an eCommerce / movie Rental of movies produced by pixar, in addition, the user can watch the movie on the website during its rental, in parallel, there is an area where admins are able to do all the commands related to CRUD to manage movies and orders.</p>
+                <h6>Programming Languages & Frameworks</h6>
+                <ul>
+                  <li>Python</li>
+                  <li>Scikit Learn Library</li>
+                  <li>Pandas Library</li>
+                  <li>Plotly Library</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="description d-flex m-3 p-3 rounded-4"   style="background-color: rgba(255, 255, 255);"
+        [@scrollTransition]="scrollStateMovieRental">
+          <div class="divimg m-3"><img src="assets/images/project5.jpg" class="img-fluid" alt="project3"></div>
+            <div class="m-2 p-3 rounded-4 d-flex flex-column justify-content-center" style="background-color: rgba(255, 255, 255);">
+                <h5>Movie Rental / e-commerce</h5>
+                <p>Description:</p><p>This analysis utilizes a dataset of credit card transactions in the western United States. It includes customer details, merchant and purchase category information, and fraud indicators. The goal is to gain insights into credit card transactions and enhance fraud detection strategies.</p>
+                <h6>Programming Languages & Frameworks</h6>
+                <ul>
+                  <li>NodeJS</li>
+                  <li>ExpressJS</li>
+                  <li>Angular</li>
+                  <li>MongoDB</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
 </div>
-
-
-
